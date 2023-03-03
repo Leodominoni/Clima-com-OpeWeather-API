@@ -18,8 +18,78 @@ body{
 
 .container{
     background-color:#6933A6; /* #6933A6 */
-    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, .24) 0px 5px 8px;
     padding: 2rem;
     border-radius: .5rem;
     color: #F9E0F9;
+}
+
+.form h2{
+    margin-bottom: 1rem;
+}
+
+.form-input-container{
+    display: flex;
+}
+
+.form input {
+    padding: .8rem;
+    border: none;
+    flex: 1;
+    border-radius: .5rem;
+}
+
+.form button {
+    padding: .8rem;
+    min-width: 50px;
+    margin-left: 8px;
+    background-color: #0BADD6;
+    color: #F9E0F9;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+}
+
+#weather-data {
+    border-top: 1px solid #F9E0F9;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+#weather-data h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .6rem;
+}
+
+#weather-data h3 i{
+    font-size: 1rem;
+}
+
+#weather-data soan {
+    margin: .6rem;
+}
+#country {
+    height: 15px;
+}
+
+#descricao-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .6rem 0;
+}
+
+#details-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#details-container #umidity {
+    border-right: 1px solid #F9E0F9;
+    margin: .6rem;
+    padding: .6rem;
 }
