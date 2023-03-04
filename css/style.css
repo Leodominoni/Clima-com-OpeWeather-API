@@ -49,11 +49,11 @@ body{
     border: none;
     cursor: pointer;
 }
-
+/* Clima */
 #weather-data {
     border-top: 1px solid #F9E0F9;
-    margin-top: 1rem;
-    padding-top: 1rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
     text-align: center;
 }
 
@@ -68,14 +68,14 @@ body{
     font-size: 1rem;
 }
 
-#weather-data soan {
+#weather-data span {
     margin: .6rem;
 }
 #country {
     height: 15px;
 }
 
-#descricao-container{
+#description-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,3 +93,40 @@ body{
     margin: .6rem;
     padding: .6rem;
 }
+
+/* Loader */
+#loader i {
+    animation: rotate 1.5s linear infinite;
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Sugestões */
+  #suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #suggestions button {
+    min-width: 100px;
+    margin: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: #0BADD6;
+    color: #F9E0F9;
+    cursor: pointer;
+    font-weight: bold;
+    opacity: 0.8;
+    transition: 0.4s;
+  }
+  
+  #suggestions button:hover {
+    color: black;
+    opacity: 1;
+  }
